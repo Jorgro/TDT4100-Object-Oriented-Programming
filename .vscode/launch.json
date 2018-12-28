@@ -1,0 +1,131 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RegistrationPlate",
+            "request": "launch",
+            "mainClass": "car_registration.RegistrationPlate",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "Airport.Main",
+            "projectName": "quickstart",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - TextUserInterface",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "Dictionary.TextUserInterface",
+            "projectName": "quickstart",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Dictionary",
+            "request": "launch",
+            "mainClass": "Dictionary.Dictionary",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - claa",
+            "request": "launch",
+            "mainClass": "claa"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<quickstart>",
+            "request": "launch",
+            "mainClass": "MOOC_Maven.quickstart.App",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<quickstart>",
+            "request": "launch",
+            "mainClass": "binarysearch.Main",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<quickstart>(1)",
+            "request": "launch",
+            "mainClass": "birdwatchers_database.Main",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<quickstart>(2)",
+            "request": "launch",
+            "mainClass": "calculator.Main",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Change<quickstart>",
+            "request": "launch",
+            "mainClass": "character_string_changer.Change",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Changer<quickstart>",
+            "request": "launch",
+            "mainClass": "character_string_changer.Changer",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<quickstart>(3)",
+            "request": "launch",
+            "mainClass": "guessing_game.Main",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Smileys<quickstart>",
+            "request": "launch",
+            "mainClass": "smileys.Smileys",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<quickstart>(4)",
+            "request": "launch",
+            "mainClass": "sorting.Main",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<quickstart>(5)",
+            "request": "launch",
+            "mainClass": "testing.Main",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<quickstart>(6)",
+            "request": "launch",
+            "mainClass": "thing_suitcase_container.Main",
+            "projectName": "quickstart"
+        }
+    ]
+}
