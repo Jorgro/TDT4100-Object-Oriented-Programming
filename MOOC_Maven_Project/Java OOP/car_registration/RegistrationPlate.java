@@ -16,6 +16,7 @@ public class RegistrationPlate {
     public String toString(){
         return country+ " "+regCode;
     }
+
     @Override
     public boolean equals(Object object) {
         if (object == null) {
@@ -35,6 +36,7 @@ public class RegistrationPlate {
         return false;
 
     }
+    
     @Override
     public int hashCode() {
         return this.country.hashCode() + this.regCode.hashCode();

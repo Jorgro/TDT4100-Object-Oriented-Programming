@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - VehicleRegister",
+            "request": "launch",
+            "mainClass": "car_registration.VehicleRegister",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - RegistrationPlate",
             "request": "launch",
             "mainClass": "car_registration.RegistrationPlate",
