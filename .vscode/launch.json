@@ -6,6 +6,65 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Card",
+            "request": "launch",
+            "mainClass": "cards.Card",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Person",
+            "request": "launch",
+            "mainClass": "rich_and_poor.Person",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Shop",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "Online_shop.Shop",
+            "projectName": "quickstart",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ShoppingBasket",
+            "request": "launch",
+            "mainClass": "Online_shop.ShoppingBasket",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Purchase",
+            "request": "launch",
+            "mainClass": "Online_shop.Purchase",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Storehouse",
+            "request": "launch",
+            "mainClass": "Online_shop.Storehouse",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Box",
+            "request": "launch",
+            "mainClass": "toBeStored.Box",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CD",
+            "request": "launch",
+            "mainClass": "toBeStored.CD",
+            "projectName": "quickstart"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - VehicleRegister",
             "request": "launch",
             "mainClass": "car_registration.VehicleRegister",
