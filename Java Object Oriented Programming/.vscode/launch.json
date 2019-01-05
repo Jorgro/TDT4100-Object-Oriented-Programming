@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - UserInterface",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "mainClass": "phone_search.UserInterface",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - PersonalDuplicateRemover",
             "request": "launch",
             "mainClass": "Sets.PersonalDuplicateRemover",

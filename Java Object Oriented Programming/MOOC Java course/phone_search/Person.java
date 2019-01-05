@@ -1,5 +1,6 @@
 package phone_search;
 
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -7,13 +8,39 @@ import java.util.Set;
 
 public class Person {
     private String name;
-    private String address;
     private Set<String> phoneNumbers;
+    private List<String> addresses;
 
     public Person(String name) {
         this.setName(name);
         this.phoneNumbers = new HashSet<String>();
-        this.address = null;
+        this.addresses = new ArrayList<String>();
+    }
+
+    /**
+     * @return the addresses
+     */
+    public String getAddresses() {
+        if (this.addresses.size() == 0) {
+            return "unkown";
+        }
+        String addresses = "";
+        for (int i = 0; i < this.addresses.size(); i++) {
+            if (i == this.addresses.size() -1) {
+                addresses += this.addresses.get(i);
+            } else {
+                addresses += this.addresses.get(i) + ", ";
+            }
+        }
+        
+        return addresses;
+    }
+
+    /**
+     * @param addresses the addresses to set
+     */
+    public void addAddress(String address) {
+        this.addresses.add(address);
     }
 
     public void addNumber(String number) {
@@ -44,20 +71,28 @@ public class Person {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
 
-    /**
-     * @return the address
-     */
-    public String getAddress() {
-        return address;
+        String person = this.name + "\n address: " + this.getAddresses() + "\n";
+
+
+        if (this.phoneNumbers.size() > 0) {
+            if (this.phoneNumbers.size() >1 ) {
+                person += " phone numbers:\n  ";
+            } else if (this.phoneNumbers.size() == 1){
+                person += " phone number:\n  ";
+            }
+            for (String number : this.phoneNumbers) {
+                person += number + "\n  ";
+            }
+        } else {
+            person += " phone number unknown";
+        }
+
+        return person.strip();
     }
 
-    /**
-     * @param address the address to set
-     */
-    public void setAddress(String address) {
-        this.address = address;
-    }
 
 
 }
