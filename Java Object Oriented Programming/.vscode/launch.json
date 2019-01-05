@@ -6,6 +6,104 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PersonalDuplicateRemover",
+            "request": "launch",
+            "mainClass": "Sets.PersonalDuplicateRemover",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PersonalMultipleEntryDictionary",
+            "request": "launch",
+            "mainClass": "Sets.PersonalMultipleEntryDictionary",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WordInspection",
+            "request": "launch",
+            "mainClass": "files.wordinspection.WordInspection",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Analysis",
+            "request": "launch",
+            "mainClass": "files.Analysis",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Printer",
+            "request": "launch",
+            "mainClass": "files.Printer",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AverageSensor",
+            "request": "launch",
+            "mainClass": "exceptions.sensors_and_temperature.AverageSensor",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ConstantSensor",
+            "request": "launch",
+            "mainClass": "exceptions.sensors_and_temperature.ConstantSensor",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Calculator",
+            "request": "launch",
+            "mainClass": "exceptions.Calculator",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Person",
+            "request": "launch",
+            "mainClass": "exceptions.Person",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Packer",
+            "request": "launch",
+            "mainClass": "moving.domain.Packer",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Item",
+            "request": "launch",
+            "mainClass": "moving.domain.Item",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "mooc.Main",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - UserInterface",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "mainClass": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Jumper",
+            "request": "launch",
+            "mainClass": "Ski_jump.Jumper",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Hand",
             "request": "launch",
             "mainClass": "cards.Hand",
