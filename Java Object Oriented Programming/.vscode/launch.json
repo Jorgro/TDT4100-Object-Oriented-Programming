@@ -6,6 +6,118 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Farm",
+            "request": "launch",
+            "mainClass": "farm_simulator.Farm",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Barn",
+            "request": "launch",
+            "mainClass": "farm_simulator.Barn",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MilkingRobot",
+            "request": "launch",
+            "mainClass": "farm_simulator.MilkingRobot",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Cow",
+            "request": "launch",
+            "mainClass": "farm_simulator.Cow",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BulkTank",
+            "request": "launch",
+            "mainClass": "farm_simulator.BulkTank",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ProductContainerRecorder",
+            "request": "launch",
+            "mainClass": "container.ProductContainerRecorder",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ContainerHistory",
+            "request": "launch",
+            "mainClass": "container.ContainerHistory",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ProductContainer",
+            "request": "launch",
+            "mainClass": "container.ProductContainer",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "people.Main",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Teacher",
+            "request": "launch",
+            "mainClass": "people.Teacher",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Student",
+            "request": "launch",
+            "mainClass": "people.Student",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Person",
+            "request": "launch",
+            "mainClass": "people.Person",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Group",
+            "request": "launch",
+            "mainClass": "organisms.Group",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Organism",
+            "request": "launch",
+            "mainClass": "organisms.Organism",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RingingCentre",
+            "request": "launch",
+            "mainClass": "birdwatchers_database.RingingCentre",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Bird",
+            "request": "launch",
+            "mainClass": "birdwatchers_database.Bird",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - UserInterface",
             "request": "launch",
             "console": "integratedTerminal",

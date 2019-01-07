@@ -21,7 +21,7 @@ public class Database {
 		String name = this.reader.nextLine();
 		System.out.print("Latin Name: ");
 		String latin_name = reader.nextLine();
-		Bird bird = new Bird(name, latin_name);
+		Bird bird = new Bird(name, latin_name, 2012);
 		this.Birds.add(bird);
 	}
 	
@@ -29,7 +29,7 @@ public class Database {
 		System.out.print("What was observed? ");
 		String name = this.reader.nextLine();
 		for (Bird b : this.Birds) {
-			if (b.name().equals(name)| b.latin_name().equals(name)) {
+			if (b.name().equals(name)| b.latinName().equals(name)) {
 				this.Stats[this.Birds.indexOf(b)] ++;
 				return true;
 			}
@@ -41,7 +41,7 @@ public class Database {
 		System.out.print("What? ");
 		String name = this.reader.nextLine();
 		for (Bird b : this.Birds) {
-			if (b.name().equals(name)| b.latin_name().equals(name)) { 
+			if (b.name().equals(name)| b.latinName().equals(name)) { 
 				System.out.println(b + ": " + this.Stats[this.Birds.indexOf(b)] + " observations.");
 				break;
 			}
