@@ -13,4 +13,6 @@ public abstract class Box {
     }
 
     public abstract boolean isInTheBox(Thing thing);
+
+    
 }

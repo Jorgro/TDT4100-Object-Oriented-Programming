@@ -6,6 +6,42 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Vampire",
+            "request": "launch",
+            "mainClass": "Dungeon.Vampire",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Dungeon",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "mainClass": "Dungeon.Dungeon",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BlackHoleBox",
+            "request": "launch",
+            "mainClass": "boxes.BlackHoleBox",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - OneThingBox",
+            "request": "launch",
+            "mainClass": "boxes.OneThingBox",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxWeightBox",
+            "request": "launch",
+            "mainClass": "boxes.MaxWeightBox",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Farm",
             "request": "launch",
             "mainClass": "farm_simulator.Farm",
