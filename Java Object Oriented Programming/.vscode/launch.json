@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - RatingRegister",
+            "request": "launch",
+            "mainClass": "reference.RatingRegister",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Person",
+            "request": "launch",
+            "mainClass": "reference.Person",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "regular_expressions.Main",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NoticeBoard",
+            "request": "launch",
+            "mainClass": "Application.noticeboard.NoticeBoard",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Card",
+            "request": "launch",
+            "mainClass": "Java8_Streams.Card",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "Java8_Streams.Test",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - UserInterface",
+            "request": "launch",
+            "mainClass": "Application.UserInterface",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MindfulDictionary",
+            "request": "launch",
+            "mainClass": "Dictionary.MindfulDictionary",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FileManager",
+            "request": "launch",
+            "mainClass": "Filemanaging.FileManager",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Vampire",
             "request": "launch",
             "mainClass": "Dungeon.Vampire",

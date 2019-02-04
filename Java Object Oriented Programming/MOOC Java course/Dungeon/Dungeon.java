@@ -3,6 +3,7 @@ package Dungeon;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -49,8 +50,10 @@ public class Dungeon {
         int x = random.nextInt(length-1)+1; // +1 for å unngå initialisering på spillerens rute.
         int y = random.nextInt(height-1)+1;
         Vampire vamp = new Vampire(x, y);
-        this.board[y][x] = vamp;
-        this.vampires.add(vamp);
+        if (!(this.board[y][x] instanceof Vampire)) {
+            this.board[y][x] = vamp;
+            this.vampires.add(vamp);
+        }
     }
 
     public int countVampires() {
@@ -88,10 +91,12 @@ public class Dungeon {
 
     public void moveVampires() {
 
-        for (Vampire vamp : this.vampires) { 
+        this.vampires.stream().forEach(vamp -> moveVampire(vamp));
+
+/*         for (Vampire vamp : this.vampires) { 
 
             moveVampire(vamp);
-        }
+        } */
         //System.out.println(this);
     }
 
@@ -130,7 +135,7 @@ public class Dungeon {
         // går utenfor grensene til bordet.
         for (int i = -1; i < 2; i++) {
             try {
-                if (!(pos[1]+i < 0 || pos[1]+i > this.board.length)) {
+                if (!(pos[1]+i < 0 || pos[1]+i >= this.board.length)) {
                     if (moveable instanceof Vampire) {
                         if (this.board[pos[1]+i][pos[0]].getClass() != moveable.getClass()) {
                             legalMoves.add(new int[]{pos[0], pos[1]+i});
@@ -146,7 +151,7 @@ public class Dungeon {
 
         for (int i = -1; i < 2; i++) {
             try {
-                if (!(pos[0]+i < 0 || pos[0]+i > this.board[0].length)) {
+                if (!(pos[0]+i < 0 || pos[0]+i >= this.board[0].length)) {
                     if (moveable instanceof Vampire) {
                         if (this.board[pos[1]][pos[0]+i].getClass() != moveable.getClass()) {
                             legalMoves.add(new int[]{pos[0]+i, pos[1]});
@@ -205,7 +210,7 @@ public class Dungeon {
              }
         }
 
-    public boolean containsArray(List<int[]> collection, int[] array) {
+    private boolean containsArray(List<int[]> collection, int[] array) {
         for (int[] arr : collection) {
             if (Arrays.equals(arr, array)) {
                 return true;
@@ -255,7 +260,7 @@ public class Dungeon {
     }
 
     public static void main(String[] args) {
-        Dungeon dung = new Dungeon(6, 7, 3, 10, false);
+        Dungeon dung = new Dungeon(6, 7, 3, 10, true);
         dung.run();
     }   
 }

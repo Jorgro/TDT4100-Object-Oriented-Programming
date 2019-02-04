@@ -27,9 +27,7 @@ public class Plane {
         String destination = reader.nextLine();
 
         String[] airflight = {departure, destination};
-        System.out.println("Thats cool");
         this.airflights.add(airflight);
-        System.out.println("Thats gay");
     }
 
     public String getID() {

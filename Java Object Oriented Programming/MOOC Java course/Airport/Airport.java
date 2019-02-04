@@ -12,9 +12,10 @@ public class Airport {
     public Airport(Scanner reader) {
         this.planes = new ArrayList<Plane>();
         this.airflights = new ArrayList<String[]>();
-        this.reader = reader;
+        this.reader = reader; 
 
     }
+    
 
     private void addPlane() {
 
