@@ -31,8 +31,6 @@ public class Card implements Comparable<Card> {
 
     }; */
 
-
-
     private final Map<Integer, String> suitToString = Map.of(0, "Spades", 1, 
     "Diamonds", 2, "Hearts", 3, "Clubs");
 
