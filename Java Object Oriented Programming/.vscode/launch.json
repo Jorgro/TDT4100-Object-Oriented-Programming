@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "vmArgs": "mvn compile exec:java",
+            "mainClass": "test.SnakeApp",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - App",
             "request": "launch",
             "mainClass": "app.App",
