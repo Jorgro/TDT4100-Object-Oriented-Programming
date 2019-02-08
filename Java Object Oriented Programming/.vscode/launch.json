@@ -8,7 +8,7 @@
             "type": "java",
             "name": "CodeLens (Launch) - Main",
             "request": "launch",
-            "vmArgs": "mvn compile exec:java",
+            "vmArgs": "--module-path mvn --add-modules javafx.controls,javafx.fxml",
             "mainClass": "test.SnakeApp",
             "projectName": "JavaOOP"
         },
