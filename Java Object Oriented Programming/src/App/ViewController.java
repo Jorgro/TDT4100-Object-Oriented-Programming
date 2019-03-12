@@ -44,6 +44,11 @@ public class ViewController {
     }
     public void changeSceneToMenu(){
         primaryStage.getScene().setRoot(menuController);
+        snakeController.pane.getChildren().remove(snakeController.game.getSnake());
+        snakeController.pane.getChildren().remove(snakeController.game.getApple());
+        try {
+        mediaController.getMediaPlayer().pause();
+        snakeController.pane.getChildren().remove(mediaView); } catch(Exception e) {}
     
     }
     public void changeSceneToGame(){

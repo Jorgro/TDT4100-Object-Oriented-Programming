@@ -16,7 +16,7 @@
   </rowConstraints>
    <children>
       <Button fx:id="startButton" onAction="#startGame" mnemonicParsing="false" prefHeight="100.0" prefWidth="400.0" text="Start new game" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-      <Button fx:id="memeButton" onAction="#meme" mnemonicParsing="false" text="Button" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Button fx:id="memeButton" onAction="#meme" mnemonicParsing="false" text="MURICA MODE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" text="Button" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
    </children>
 </fx:root>

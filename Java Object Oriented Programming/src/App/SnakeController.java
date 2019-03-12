@@ -2,16 +2,17 @@ package App;
 
 //Fikse animasjon: sette en rektangel boks i hjørnet der man svinger
 
-
 import java.io.File;
 import java.io.IOException;
 
-
 import javafx.animation.AnimationTimer;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.beans.property.StringProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -34,14 +35,16 @@ public class SnakeController extends VBox {
     public MenuController menuController;
 
 	@FXML public StackPane pane;
-	@FXML public VBox box;
+    @FXML public VBox box;
+    @FXML public Label gameScore;
 
 	public SnakeGame game;
     public AnimationTimer timer;
     public ViewController viewController;
     public MediaController mediaController;
     public SnakeGame snakeGame;
-
+    public Timeline gameLoop;
+    
     public boolean meme = false;
 
 /*     String path = "src/test/gas.mp3";
@@ -55,7 +58,7 @@ public class SnakeController extends VBox {
     public SnakeController() {
 
 
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SnakeGame.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SnakeGame2.fxml"));
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
         
@@ -69,54 +72,30 @@ public class SnakeController extends VBox {
         }
         this.pane.setStyle("-fx-background-color: #000000;");
         this.game = new SnakeGame(this);
-       // this.background.setFill(Color.BLACK);
-        //this.background.toFront();
-       // this.getChildren().add(this.background);
-     //   this.background.toBack();
-	    
-
-	     // Create the player and set to play automatically.
-/* 	    MediaPlayer mediaPlayer = new MediaPlayer(media2);
-	    mediaPlayer.setAutoPlay(true);
-	    mediaPlayer.play();
-	    mediaPlayer.stop();
-	    mediaPlayer.play();
-	    mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE); */
-
-	    // Create the view and add it to the Scene.
-/* 	    MediaView mediaView = new MediaView(mediaPlayer);
-	    mediaView.setFitHeight(900);
-	    mediaView.setFitWidth(1440); */
-	    //((Group) scene.getRoot()).getChildren().add(mediaView);
-        //this.pane.getChildren().add(this.background);
- /*        this.pane.getChildren().add(mediaView); */
-        //mediaView.toFront();
-/*         menu.toFront();
-        button.toFront();
-        button.getStylesheets().add(this.getClass()
-        		.getResource("imagebutton.css").toExternalForm()); */
-        //button.setMinSize(148, 148); button.setMaxSize(148, 148);
-        //this.background.setFill(new ImagePattern(img, 0, 0, 1, 1, true));
-
-        //this.sound = new Media(new File(musicFile).toURI().toString());
+        this.gameScore.toFront();
     }
 
     public void newGame() {
         game.newGame();
         this.snake = game.getSnake();
         this.pane.getChildren().add(snake);
-        snake.toFront();
+        gameScore.toFront();
+        snake.toFront(); 
         if (this.meme) {
             this.meme();
+            this.meme = false;
         } else {
             this.defaultGame();
         }
-        timer.start();
+        //timer.start();
+        gameLoop.play();
     }
 
     public void setMenuController(MenuController menuController) {
         this.menuController = menuController;
     }
+
+
     
     public void setSnake(Snake snake) {
     	this.snake = snake;
@@ -124,6 +103,10 @@ public class SnakeController extends VBox {
 
     public Snake getSnake() {
         return this.snake;
+    }
+
+    public void setGameLoop(Timeline gameLoop) {
+        this.gameLoop = gameLoop;
     }
     
     public void setTimer(AnimationTimer timer) {
@@ -154,20 +137,29 @@ public class SnakeController extends VBox {
         Image img1 = new Image(file1.toURI().toString());
         this.background.setFill(new ImagePattern(img1, 0, 0, 1, 1, true)); */
         //this.background.toBack();
-
-        File file2 = new File("src/App/trump.png");
+        mediaController.setFilePath("src/App/ricardo.mp4");
+        MediaView mediaView = new MediaView(mediaController.getMediaPlayer());
+        mediaController.getMediaPlayer().play();
+	    mediaView.setFitHeight(900);
+        mediaView.setFitWidth(1680);
+        pane.getChildren().add(mediaView);
+        mediaView.toBack();
+        viewController.mediaView = mediaView;
+        File file2 = new File("src/App/PepePls.gif");
         Image img2 = new Image(file2.toURI().toString());
+        File file3 = new File("src/App/PepePls.gif");
+        Image img3 = new Image(file3.toURI().toString());
         System.out.println(file2);
         System.out.println(img2);
         System.out.println(this.snake);
         //this.snake.setScale(5);
+        game.apple.setFill(new ImagePattern(img3, 0, 0, 1, 1, true));
         this.snake.setFill(new ImagePattern(img2, 0, 0, 1, 1, true));
         //this.game.getSnake().toFront();
 
     }
 
     public void defaultGame() {
-        System.out.println("Hello?");
         this.game.getSnake().setFill(Color.GREEN);
         this.game.getApple().setFill(Color.RED);
     }

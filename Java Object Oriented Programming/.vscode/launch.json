@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ThreeOrMoreOfAKind",
+            "request": "launch",
+            "mainClass": "Eksamener.Eksamen2018.ThreeOrMoreOfAKind",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Dice",
+            "request": "launch",
+            "mainClass": "Eksamener.Eksamen2018.Dice",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FileHandler",
+            "request": "launch",
+            "mainClass": "App.FileHandler",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SnakeApp",
             "request": "launch",
             "mainClass": "App.SnakeApp",

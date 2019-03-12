@@ -30,6 +30,8 @@ public class SnakeGame {
         this.snake = snake;
     }
 
+    
+
     /**
      * @return the score
      */
@@ -42,6 +44,7 @@ public class SnakeGame {
         this.apple = new Apple(snake);
         this.apple.placeOnScreen();
         this.snakeController.pane.getChildren().add(this.apple);
+        this.score = 0;
         this.apple.toFront();
         
     }
@@ -57,6 +60,7 @@ public class SnakeGame {
             System.out.println("eaten");
             snake.addSnakePiece();
             apple.placeOnScreen();
+            score += 100;
         }
         
 

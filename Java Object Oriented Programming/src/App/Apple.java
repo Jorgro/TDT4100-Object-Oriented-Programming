@@ -16,7 +16,7 @@ public class Apple extends Pane {
 
     public Apple(Snake snake) {
         this.rectangle = new Rectangle(SnakePiece.width, SnakePiece.height);
-        this.rectangle.setFill(Color.AQUA);
+        //this.rectangle.setFill(Color.AQUA);
         this.getChildren().add(rectangle);
         this.snake = snake;
     }
