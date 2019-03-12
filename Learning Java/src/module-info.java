@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author jorgenrosager
- *
- */
-module infoOOP {
-}
