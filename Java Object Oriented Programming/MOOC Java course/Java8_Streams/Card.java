@@ -34,8 +34,8 @@ public class Card implements Predicate{
    }
 
    public static void main(String[] args) {
-      Collection<Card> cards = Arrays.asList(new Card('C', 1), new Card('S', 2), new Card('D', 13), new Card('S', 13),
-            new Card('S', 12), new Card('H', 2));
+      Collection<Card> cards = Arrays.asList(new Card('C', 1), new Card('C', 2), new Card('C', 13), new Card('C', 13),
+            new Card('S', 12));
       List<Card> cards2 = new ArrayList<Card>();
       cards.stream().forEach(c -> cards2.add(c));
       //cards2.sort((c1, c2) -> c1.getFace().compareTo(c2.getFace()));
@@ -49,13 +49,17 @@ public class Card implements Predicate{
 
       int i = cards.stream().map(Card::getFace).reduce((a, b) -> a + b).get();
       System.out.println(i);
-
+      //System.out.println("test:");
       System.out.println(cards.stream().anyMatch(c -> (c.getSuit() == 'S' && c.getFace() == 12)));
 
       System.out.println(cards.stream()
             .allMatch(c -> (c.getSuit() == 'S' || c.getSuit() == 'H' || c.getSuit() == 'D' || c.getSuit() == 'C')));
-      System.out.println(cards.stream().map(Card::getSuit).allMatch(c -> (cards.iterator().next().getSuit() == c)));
 
+      System.out.println("test:");
+      System.out.println(cards.stream().filter(c -> (c.getSuit() == cards.iterator().next().getSuit()))
+      .count() == 5);
+
+      //System.out.println("test:");
       System.out.println(cards.stream().map(Card::getSuit).distinct().count() == 4);
       String s = "hey man i am no";
       String k = "AG423205";
@@ -72,7 +76,7 @@ public class Card implements Predicate{
       System.out.println(!there);
       System.out.println("Hello");
       System.out.println(cards.stream().anyMatch(find('G')));
-      System.out.println(Card.getCard(cards));
+      //System.out.println(Card.getCard(cards));
    }
 
    @Override
