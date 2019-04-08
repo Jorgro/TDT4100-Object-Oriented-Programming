@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Bank",
+            "request": "launch",
+            "mainClass": "_4721.Bank",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - j/SnakeApp",
+            "request": "launch",
+            "mainClass": "j/SnakeApp",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - jrgen/SnakeApp",
+            "request": "launch",
+            "mainClass": "jrgen/SnakeApp",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - hello",
+            "request": "launch",
+            "mainClass": "hello",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SnakeApp",
+            "request": "launch",
+            "mainClass": "SnakeApp",
+            "projectName": "JavaOOP"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ThreeOrMoreOfAKind",
             "request": "launch",
             "mainClass": "Eksamener.Eksamen2018.ThreeOrMoreOfAKind",

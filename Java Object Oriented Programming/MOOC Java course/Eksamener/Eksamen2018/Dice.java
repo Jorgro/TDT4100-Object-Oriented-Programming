@@ -73,7 +73,7 @@ public class Dice implements Iterable<Integer> {
          }
          return s;
      }
-
+     
     /** (part 2)
     * Parses a string using the toString format (see above) and
     * returns a corresponding Dice.
