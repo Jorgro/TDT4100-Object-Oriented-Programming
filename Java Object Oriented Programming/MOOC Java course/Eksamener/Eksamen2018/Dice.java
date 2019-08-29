@@ -73,7 +73,7 @@ public class Dice implements Iterable<Integer> {
          }
          return s;
      }
-     
+
     /** (part 2)
     * Parses a string using the toString format (see above) and
     * returns a corresponding Dice.
@@ -166,9 +166,9 @@ public class Dice implements Iterable<Integer> {
     * all Dice in the argument, without any specific order
     */
     public Dice add(Dice dice) {
-        Collection<Integer> dieValues = new ArrayList<>();
+        Collection<Integer> dieValues = new ArrayList<>(this.dieValues);
         dice.dieValues.stream().forEach(c -> dieValues.add(c));
-        this.dieValues.stream().forEach(c -> dieValues.add(c));
+        //this.dieValues.stream().forEach(c -> dieValues.add(c));
         return new Dice(dieValues, -1);
     }
 
@@ -191,8 +191,9 @@ public class Dice implements Iterable<Integer> {
         Dice dice = new Dice(4);
         System.out.println(dice);
         Dice dice2 = new Dice(2);
-        System.out.println(dice2);
+        System.out.println(dice2.add(dice));
         System.out.println(dice.remove(dice2));
+
     }
 }
 

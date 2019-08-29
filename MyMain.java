@@ -15,7 +15,7 @@ public class MyMain extends Application {
         Parent root = (Parent) fxmlLoader.load(this.getClass().getResourceAsStream("MyFXML.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-    }
+   } 
        	
     public static void main(String[] args) {
         launch(args);
